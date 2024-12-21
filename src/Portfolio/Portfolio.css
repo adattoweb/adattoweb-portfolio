@@ -1,0 +1,130 @@
+.portfolio-block{
+    margin-top: 150px;
+    flex: 1 1 auto;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+.portfolio-item{
+    width: 80vw;
+    display: flex;
+    perspective: 800px;
+    gap: 10vw;
+}
+.portfolio-block .portfolio-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.portfolio-item img{
+    width: 400px;
+    height: 205px;
+    transition: 0.3s ease all;
+    border: 5px solid #000;
+    border-radius: 20px;
+}
+.portfolio-item img:hover{
+    transform: rotateX(10deg) rotateY(-10deg)
+}
+.portfolio-info{
+    text-align: center;
+}
+.portfolio-info h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.portfolio-info p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0px 15px 0px;
+}
+@media screen and (max-width: 1200px) {
+    .portfolio-block{
+        margin-top: 130px;
+        width: 90vw;
+        gap: 50px;
+    }
+    .portfolio-item{
+        width: 80vw;
+        gap: 10vw;
+    }
+    .portfolio-item img{
+        width: 300px;
+        height: 152px;
+        border: 3px solid #000;
+        border-radius: 10px;
+    }
+    .portfolio-info h3{
+        font-size: 20px;
+    }
+    .portfolio-info p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .portfolio-block{
+        margin-top: 130px;
+        gap: 60px;
+    }
+    .portfolio-item, .portfolio-block .portfolio-item:nth-child(even){
+        align-items: center;
+        width: 80vw;
+        gap: 3vw;
+        flex-direction: column;
+    }
+    .portfolio-item img{
+        width: 300px;
+        height: 152px;
+        border: 3px solid #000;
+        border-radius: 10px;
+    }
+    .portfolio-info h3{
+        font-size: 18px;
+    }
+    .portfolio-info p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .portfolio-block{
+        margin-top: 120px;
+        gap: 40px;
+    }
+    .portfolio-item, .portfolio-block .portfolio-item:nth-child(even){
+        width: 90vw;
+    }
+    .portfolio-item img{
+        width: 250px;
+        height: 127px;
+    }
+    .portfolio-info h3{
+        font-size: 16px;
+    }
+    .portfolio-info p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .portfolio-block{
+        margin-top: 120px;
+        gap: 30px;
+    }
+    .portfolio-item, .portfolio-block .portfolio-item:nth-child(even){
+        width: 90vw;
+        gap: 3vw;
+    }
+    .portfolio-item img{
+        width: 220px;
+        height: 111px;
+        border-radius: 10px;
+    }
+    .portfolio-info h3{
+        font-size: 15px;
+    }
+    .portfolio-info p{
+        font-size: 11px;
+    }
+}

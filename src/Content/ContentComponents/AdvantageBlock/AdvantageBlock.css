@@ -1,0 +1,112 @@
+.advantage-block{
+    width: 100vw;
+    background-color: #fff
+}
+.advantage-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.advantage-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95vw;
+}
+.advantage-item{
+    background-color: #000;
+    border-radius: 20px;
+    width: 280px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 20px 5px 20px;
+}
+.advantage-item h4{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    width: 200px;
+    height: 35px;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.advantage-item p{
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+@media screen and (max-width: 1400px) {
+    .advantage-parent{
+        gap: 40px;
+    }
+    .advantage-content{
+        gap: 20px;
+    }
+    .advantage-item{
+        border-radius: 20px;
+        width: 250px;
+        height: 310px;
+        gap: 20px;
+        padding: 25px 20px 5px 20px;
+    }
+    .advantage-item h4{
+        font-size: 17px;
+        width: 200px;
+        height: 35px;
+    }
+    .advantage-item p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .advantage-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .advantage-content{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95vw;
+    }
+}
+@media screen and (max-width: 780px) {
+    .advantage-parent{
+        gap: 30px;
+    }
+    .advantage-content{
+        width: 90vw;
+        gap: 20px;
+    }
+    .advantage-item{
+        border-radius: 15px;
+        width: 210px;
+        height: 300px;
+        gap: 20px;
+        padding: 25px 20px 5px 15px;
+    }
+    .advantage-item h4{
+        font-size: 15px;
+        width: 160px;
+        height: 30px;
+        border-radius: 8px;
+    }
+    .advantage-item p{
+        font-size: 13px;
+    }
+}

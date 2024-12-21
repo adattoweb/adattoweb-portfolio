@@ -1,0 +1,126 @@
+.reviews-block{
+    background-color: #fff;
+    width: 100vw;
+}
+.reviews-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.reviews-content{
+    width: 95vw;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.reviews-info{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.reviews-two{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.reviews-item{
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 100px;
+}
+.reviews-item p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff
+}
+.reviews-item h4{
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.reviews-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.reviews-stars{
+    display: flex;
+    gap: 2px;
+}
+.reviews-stars img{
+    width: 15px;
+    height: 15px;
+}
+@media screen and (max-width: 780px) {
+    .reviews-parent{
+        gap: 30px;
+    }
+    .reviews-content{
+        gap: 30px;
+    }
+    .reviews-item{
+        width: 400px;
+        height: 100px;
+    }
+    .reviews-item p{
+        font-size: 14px;
+    }
+    .reviews-item h4{
+        font-size: 17px;
+    }
+    .reviews-logo{
+        width: 40px;
+        height: 40px;
+    }
+    .reviews-stars img{
+        width: 12px;
+        height: 12px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .reviews-parent{
+        gap: 20px;
+    }
+    .reviews-content{
+        gap: 20px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .reviews-item{
+        width: 300px;
+        height: 120px;
+    }
+    .reviews-logo{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .reviews-item{
+        width: 250px;
+        height: 110px;
+    }
+    .reviews-item p{
+        font-size: 13px;
+        position: relative;
+        right: 30px;
+        width: 220px;
+    }
+    .reviews-item h4{
+        font-size: 15px;
+    }
+    .reviews-logo{
+        width: 30px;
+        height: 30px;
+    }
+}

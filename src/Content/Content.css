@@ -1,0 +1,29 @@
+.content{
+    width: 100vw;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.about-grandparent{
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('../assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width: 580px) {
+    .about-grandparent{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('../assets/images/background-phone.png');
+    }
+}
+.header-name{
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+    .header-name{
+        font-size: 30px;
+    }
+}
