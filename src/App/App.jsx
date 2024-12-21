@@ -12,10 +12,6 @@ import ReactDOM from 'react-dom'
 
 
 function App() {
-  if(window.location.pathname !== '/'){
-    window.location.pathname = "/"
-    return <Page404></Page404>
-  }
   const [isEn, setIsEn] = useState(false)
   const [isNeed, setIsNeed] = useState(false)
   const [currentPage, setCurrentPage] = useState('Main')
