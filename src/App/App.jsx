@@ -1,7 +1,6 @@
 import './App.css'
 import Header from '../Header/Header'
 import Content from '../Content/Content'
-import Page404 from '../Page404/Page404'
 import Portfolio from '../Portfolio/Portfolio'
 import Footer from '../Footer/Footer'
 import LoadScreen from '../LoadScreen/LoadScreen'
