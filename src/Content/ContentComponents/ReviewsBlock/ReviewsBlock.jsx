@@ -1,6 +1,6 @@
 import './ReviewsBlock.css'
 import ReviewsItem from './ReviewsItem'
-import adattologo from '../../../assets/images/adattologo.png'
+import adattologo from '../../../assets/images/adattobiglogo.png'
 
 export default function ReviewsBlock(props){
     const {isEn} = props;

@@ -12,13 +12,15 @@
 }
 .stack-lang{
     display: flex;
-    width: 700px;
+    width: 800px;
     border-radius: 20px;
     height: 70px;
     justify-content: space-evenly;
     padding: 0px 20px;
     align-items: center;
     background-color: #000;
+    gap: 20px;
+    padding: 5px;
 }
 .stack-item{
     display: flex;
@@ -39,15 +41,19 @@
     width: 25px;
     height: 25px;
 }
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .stack-lang{
         width: 70vw;
 
     }
-}
-@media screen and (max-width: 780px) {
+} */
+@media screen and (max-width: 900px) {
     .stack-lang{
         height: 60px;
+        flex-direction: column;
+        width: 250px;
+        height: max-content;
+        padding: 20px 10px;
     }
     .stack-item{
         gap: 10px;
@@ -63,9 +69,6 @@
     }
 }
 @media screen and (max-width: 670px) {
-    .stack-lang{
-        width: 80vw;
-    }
     .stack-item p{
         font-size: 14px;
     }
@@ -75,10 +78,7 @@
         gap: 30px;
     }
     .stack-lang{
-        flex-direction: column;
-        width: 40vw;
         border-radius: 15px;
-        height: 200px;
     }
 }
 @media screen and (max-width: 350px) {

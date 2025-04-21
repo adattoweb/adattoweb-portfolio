@@ -6,9 +6,9 @@ import Footer from '../Footer/Footer'
 import LoadScreen from '../LoadScreen/LoadScreen'
 
 import Modal from '../Modal/Modal'
-import React, { useState, useEffect } from 'react'
-import ReactDOM from 'react-dom'
+import { createContext, useContext, useState, useEffect } from 'react'
 
+export const ChangePageContext = createContext()
 
 function App() {
   const [isEn, setIsEn] = useState(false)
@@ -57,12 +57,15 @@ function App() {
       <Header onBurgerClick={() => {
         setIsNeed(!isNeed)
       }}></Header>
-      <Content isEn={isEn}></Content>
+      <ChangePageContext.Provider value = {{setCurrentPage}}>
+        <Content isEn={isEn}></Content>
+      </ChangePageContext.Provider>
       <Footer isEn={isEn}></Footer>
       <Modal isNeed={isNeed} isEn={isEn}></Modal>
       </>
     )
   }
 }
+
 
 export default App

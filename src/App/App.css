@@ -9,6 +9,7 @@ font-family: 'Montserrat Alternates', sans-serif;
 }
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 html,body{
     height: 100%;
@@ -19,6 +20,7 @@ html,body{
     align-items: center;
     flex-direction: column;
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 .github{
     background-color: #2E2E2E;
@@ -42,6 +44,7 @@ html,body{
     transition: 0.3s ease all;
     border: 3px solid #000;
     text-decoration: none;
+    user-select: none;
 }
 @media screen and (max-width: 1200px) {
     .button{
